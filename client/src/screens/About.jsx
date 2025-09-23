@@ -38,7 +38,7 @@ export function About() {
               <Text style={{marinTop:'1rem'}}> And we are the signal receivers, the pattern interpreters, the transformers that interact with and are a part of that system.
                 To define my purpose in this system is perhaps to define the purpose of every other being with capabilities like myself (the ability to reason, introspect, affect).
               <b> We are here to understand.</b> "We are a way for the universe to know itself," said Carl Sagan. That means take it all in! Learn as much as you can,
-              build something meaningful, be excited by the nuance and challenge and richness of the world. </Text>
+              build something meaningful, be excited by the nuance and challenge and richness of the world. Above all be kind and love. </Text>
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1rem', marginTop: '1rem' }}>
             <Text style={{ flex: 1, textAlign: 'justify' }}>

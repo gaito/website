@@ -24,17 +24,17 @@ export function Projects() {
   const [expandedProject, setExpandedProject] = useState(null);
 
   // Define skills and projects
-  const skills = ['React', 'HTML/CSS', 'Javascript', 'C++', 'Matlab', 'R', 'Node.js', 'Git', 'Gitlab', 'Figma', 'GraphQL', 'Generative AI', 'Scikit Learn', 'Next.js', 'AWS', 'Kafka', 'Grafana', 'SQL', 'API Development', 'Unity', 'C#', 'Data Analysis', 'Blender', 'Perforce', 'Bash'];
+  const skills = ['React', 'Scala', 'Flink', 'Spark', 'HTML/CSS', 'Javascript', 'C++', 'Matlab', 'R', 'Node.js', 'Git', 'Gitlab', 'Figma', 'GraphQL', 'Generative AI', 'Scikit Learn', 'Next.js', 'AWS', 'Kafka', 'Grafana', 'SQL', 'API Development', 'Unity', 'C#', 'Data Analysis', 'Blender', 'Perforce', 'Bash'];
   const projects = [
     {
         id: 'bloomberg',
         title: 'Software Engineer for Bloomberg',
         description: 'August 2024 - Present - New York, NY',
-        skills: ['Python', 'C++', 'Hadoop', 'Grafana', 'Humio', 'Git', 'Kafka'],
+        skills: ['Python', 'C++', 'Hadoop', 'Scala', 'Flink', 'Spark', 'Grafana', 'Humio', 'Git', 'Kafka'],
         details: 
         `The market is one of the most fast moving and elusive systems on the planet. At peak hours, ticks come in at 300,000/sec. As a company which promises financial data, Bloomberg needs a
         way of establishing metrics on data latency and correctness. I am on the Market Data Latency and Correctness team, where we are building engines that calculate market latency end to end
-        and estbalish personalized, measurable correctness algorithms. The insights generated from our team help to guide initiatives, cater SLOs, and address issues in the Bloomberg
+        and establish personalized, measurable correctness algorithms. The insights generated from our team help to guide initiatives, cater SLOs, and address issues in the Bloomberg
         data pipeline, which forms a large portion of annual revenue.
         `,
     },
@@ -44,7 +44,7 @@ export function Projects() {
         description: 'June 2022 - June 2023 - Remote',
         skills: ['React', 'HTML/CSS', 'Javascript', 'Node.js', 'Next.js', 'Git', 'Plotly.js', 'Figma'],
         details: 
-        `Every body is different. The more insights that doctors have on a patient, the more they can cater surgical procedures to the patient's speciic needs.
+        `Every body is different. The more insights that doctors have on a patient, the more they can cater surgical procedures to the patient's specific needs.
         At Kelahealth, I worked to create a surgeon dashboard, fed by a predictive analytics model, which displayed patient risks and procedure recommendations. The 
         dashboard was demo'ed at 11+ hospitals. Throughout, I worked to integrate customer feedback and ever-changing backend data schemas/structure to provide an efficient 
         backend and seamless and intuitive frontend experience reqired in such a high-stakes environmnet.
@@ -61,7 +61,7 @@ export function Projects() {
         `Advertisements are ever-changing and must connect with every age, gender, location, and interest. At Publicis Sapient, I worked to create an advertisement dashboard powered by 
         generative AI, which would assist McDonalds marketing in the ad creation process. My responsibility was the backend, which included creation of the customer segments based on their 
         McDonalds profiles (gender, location, point value, buy frequency, etc.) and prompting of generative AI models to create advertisements based on the conjunction of customer segment and 
-        local events (i.e. concerts, sports games, holidays, etc.). I additionally dseigned the API which fed the frontend dashboard. These results were presented at the end of the summer to 
+        local events (i.e. concerts, sports games, holidays, etc.). I additionally designed the API which fed the frontend dashboard. These results were presented at the end of the summer to 
         relevant Product Managers and staff. 
          `,
         link: 'https://www.publicissapient.com/digital-business-transformation?utm_source=google&utm_medium=paid-search&utm_campaign=BRAND_ALW_DBT_07.2024_Paid.Search_Google_Text_US_GEN_OF.NO&utm_content=BRAND_ALW_DBT_Brand_1&utm_category=Brand&OfferingFamily=OF.NO&utm_term=publicis%20sapient&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7qvwFSg-Z0C-CWyJQlmx5DvYwJTK1MbV8b0xNVdqlJEBZK9ySY12S8aAjRgEALw_wcB',
