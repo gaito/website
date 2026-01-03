@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import classes from './Header.module.css';
 
 import Star from '../assets/star.png';
+import StarColor from '../assets/star2.png';
 import Signature from '../assets/signature.png';
 import ColorSignature from '../assets/signature_color.png';
 
@@ -18,6 +19,7 @@ export function Header() {
   const { pathname } = useLocation();
   const [opened, { toggle, close }] = useDisclosure(false);
   const [hoverImage, setHoverImage] = useState(Signature);
+  const [starHover, setStarHover] = useState(false);
   const navigate = useNavigate();
 
   const isActive = (link) => {
@@ -75,9 +77,13 @@ export function Header() {
               />
             </div>
             <Image
-              src={Star}
+              src={starHover ? StarColor : Star}
               width={20}
               height={20}
+              onMouseEnter={() => setStarHover(true)}
+              onMouseLeave={() => setStarHover(false)}
+              style={{ cursor: 'pointer', transition: 'filter 0.3s' }}
+              onClick={() => navigate('/')}
             />
           </Flex>
 

@@ -5,6 +5,7 @@ import { Container, Text, Image, ScrollArea, Group, ActionIcon } from '@mantine/
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import Me from '../assets/me.png'
+import Me2 from '../assets/me2.png';
 import Guitar from '../assets/guitar.png'
 import GuitarMusic from '../assets/guitar_music.png'
 import Brain from '../assets/brain.png'
@@ -13,6 +14,7 @@ import BrainColor from '../assets/brain_color.png'
 export function About() {
   const [rightHoverImage, setRightHoverImage] = useState(Guitar);
   const [leftHoverImage, setLeftHoverImage] = useState(Brain);
+  const [meHoverImage, setMeHoverImage] = useState(Me);
 
   return (
     <ScrollArea style={{ height: '100vh' }}>
@@ -21,12 +23,14 @@ export function About() {
         <div style={{display: 'flex', flexDirection: 'column'}}>
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1rem' }}>
             <Image
-              src={Me}
+              src={meHoverImage}
               width={150}
               height={150}
               radius="50%"
-              style={{ flexShrink: 0 }}
+              style={{ flexShrink: 0, minWidth: 150, minHeight: 150, maxWidth: 150, maxHeight: 150, objectFit: 'cover' }}
               visibleFrom='sm'
+              onMouseEnter={() => setMeHoverImage(Me2)}
+              onMouseLeave={() => setMeHoverImage(Me)}
             />
             <Text style={{ flex: 1, textAlign: 'justify' }}>
               Hello, my name is Taylor Gaito. I am a 2024 graduate from Johns Hopkins with two Bachelor's in Cognitive Science and Computer Science. 
@@ -43,7 +47,7 @@ export function About() {
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1rem', marginTop: '1rem' }}>
             <Text style={{ flex: 1, textAlign: 'justify' }}>
               New York is my favorite place because you can feel passion pulsing from everywhere. I'm constantly inspired being here. In my free time
-              I love to write and learn songs on the guitar (I have a Mexican Fender Stratocaster with Sunburst Finish).
+              I love to write and learn songs on the guitar (I have a Mexican Fender Stratocaster with Sunburst Finish) and play drums (currently on Roland TD-17KV2).
               I play alone now, but I was in a band throughout high school and college and have yet to make one in New York, which is not the most
               drum-set friendly city. 
             </Text>

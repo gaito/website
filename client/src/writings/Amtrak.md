@@ -5,7 +5,7 @@ title: Amtrak Musings
 
 I’m on an Amtrak right now and just passed by a sign on a bridge that says “Trenton makes -- The world takes”. Bizarre thing to put on a bridge, if you ask me. But if you’re curious about this history, as I was, the slogan comes from a competition hosted in 1910 by the Trenton Chamber of commerce, “to find a slogan for the city's industrial and commercial achievements”. The initial slogan was “The world takes -- Trenton makes”, coined by a lumber yard worker named S. Roy Heath. To me the former seems to put the emphasis on the greed of mankind and not the productivity of Trenton, and does a disservice to Mr. Roy Heath. But anyway.
 
-                                       *           *           * 
+                         *           *           * 
 
 I’ve been thinking a lot about suffering on this train ride. I’m sitting just behind the handicapped 4-seater and am able to see, in the reflection of the window, an old couple facing me. Of course, in this dark mirror, I begin thinking about death and aging as I always do. 
 

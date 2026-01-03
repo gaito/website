@@ -16,7 +16,7 @@ export function Footer() {
           <Anchor href="https://github.com/gaito" target="_blank">
             <IconBrandGithub size={24} color='grey'/>
           </Anchor>
-          <Anchor href="https://www.youtube.com/@taylorgaito" target="_blank">
+          <Anchor href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
             <IconBrandYoutube size={24} color='red' />
           </Anchor>
         </Group>
