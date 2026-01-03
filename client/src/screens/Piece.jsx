@@ -2,15 +2,19 @@ import { useParams } from 'react-router-dom';
 import { Container, Title, Text, Button, Group } from '@mantine/core';
 import { IconArrowLeft } from '@tabler/icons-react';
 import { useNavigate } from 'react-router-dom';
+import { marked } from 'marked';
 
 import { Header } from '../components/Header';
 import Footer from '../components/Footer';
+import writingsData from '../writings';
 
 export function Piece() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const writing = mockWritings.find((w) => w.id === parseInt(id));
+  const writing = writingsData.find(
+    (w) => (w.id && w.id.toString() === id) || w.title === id
+  );
 
   if (!writing) {
     return (
@@ -40,9 +44,11 @@ export function Piece() {
         <Title order={2} style={{ flexGrow: 1, textAlign: 'center'}}>
           {writing.title}
         </Title>
-        <div style={{ width: '18px' }} /> {/* Placeholder to balance the row */}
+        <div style={{ width: '18px' }} />
       </Group>
-      <Text size="md">{writing.content}</Text>
+      <div style={{ padding: '1rem 0' }}>
+        <div dangerouslySetInnerHTML={{ __html: marked.parse(writing.content) }} />
+      </div>
       <Footer />
     </Container>
   );
